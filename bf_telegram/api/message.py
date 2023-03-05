@@ -10,6 +10,7 @@ from message_entity import MessageEntity
 from photo_size import PhotoSize
 from animation import Animation
 from audio import Audio
+from document import Document
 
 class Message:
     """
