@@ -12,7 +12,7 @@ class User:
     """
 
     def __init__(self,
-                 id: int,
+                 id_: int,
                  is_bot: bool,
                  first_name: str,
                  last_name: Optional[str] = None,
@@ -24,7 +24,7 @@ class User:
                  can_read_all_group_messages: Optional[bool] = None,
                  supports_inline_queries: Optional[bool] = None):
         """
-        :param id: Unique identifier for this user or bot. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.
+        :param id_: Unique identifier for this user or bot. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.
         :param is_bot: True, if this user is a bot
         :param first_name: User's or bot's first name
         :param last_name: User's or bot's last name
@@ -36,7 +36,7 @@ class User:
         :param can_read_all_group_messages: True, if privacy mode is disabled for the bot. Returned only in getMe.
         :param supports_inline_queries: True, if the bot supports inline queries. Returned only in getMe.
         """
-        self.id = id
+        self.id_ = id_
         self.is_bot = is_bot
         self.first_name = first_name
         self.last_name = last_name

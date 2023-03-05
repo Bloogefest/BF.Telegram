@@ -12,7 +12,7 @@ class Chat:
     """
 
     def __init__(self,
-                 id: int,
+                 id_: int,
                  type: str,
                  title: Optional[str] = None,
                  username: Optional[str] = None,
@@ -41,7 +41,7 @@ class Chat:
                  linked_chat_id: Optional[int] = None,
                  location: Optional[ChatLocation] = None):
         """
-        :param id: Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
+        :param id_: Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
         :param type: Type of chat, can be either “private”, “group”, “supergroup” or “channel”
         :param title: Title, for supergroups, channels and group chats
         :param username: Username, for private chats, supergroups and channels if available
@@ -70,7 +70,7 @@ class Chat:
         :param linked_chat_id: Unique identifier for the linked chat, i.e. the discussion group identifier for a channel and vice versa; for supergroups and channel chats. This identifier may be greater than 32 bits and some programming languages may have difficulty/silent defects in interpreting it. But it is smaller than 52 bits, so a signed 64 bit integer or double-precision float type are safe for storing this identifier. Returned only in getChat.
         :param location: For supergroups, the location to which the supergroup is connected. Returned only in getChat.
         """
-        self.id = id
+        self.id = id_
         self.type = type
         self.title = title
         self.username = username
