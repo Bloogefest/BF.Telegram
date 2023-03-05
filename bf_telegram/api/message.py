@@ -12,6 +12,7 @@ from animation import Animation
 from audio import Audio
 from document import Document
 from video import Video
+from video_note import VideoNote
 
 class Message:
     """
