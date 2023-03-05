@@ -7,6 +7,7 @@ from typing import Optional
 from user import User
 from chat import Chat
 from message_entity import MessageEntity
+from photo_size import PhotoSize
 
 class Message:
     """
