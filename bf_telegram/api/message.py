@@ -6,6 +6,7 @@ from typing import Optional
 
 from user import User
 from chat import Chat
+from message_entity import MessageEntity
 
 class Message:
     """
