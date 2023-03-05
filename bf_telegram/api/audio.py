@@ -17,12 +17,12 @@ class Audio:
                  file_id: str,
                  file_unique_id: str,
                  duration: int,
-                 performer: Optional[str],
-                 title: Optional[str],
-                 file_name: Optional[str],
-                 mime_type: Optional[str],
-                 file_size: Optional[int],
-                 thumb: Optional[PhotoSize]):
+                 performer: Optional[str] = None,
+                 title: Optional[str] = None,
+                 file_name: Optional[str] = None,
+                 mime_type: Optional[str] = None,
+                 file_size: Optional[int] = None,
+                 thumb: Optional[PhotoSize] = None):
         """
         :param file_id: Identifier for this file, which can be used to download or reuse the file
         :param file_unique_id: Unique identifier for this file, which is supposed to be the same over time and for different bots. Can't be used to download or reuse the file.
