@@ -13,7 +13,7 @@ class Chat:
 
     def __init__(self,
                  id_: int,
-                 type: str,
+                 type_: str,
                  title: Optional[str] = None,
                  username: Optional[str] = None,
                  first_name: Optional[str] = None,
@@ -41,8 +41,8 @@ class Chat:
                  linked_chat_id: Optional[int] = None,
                  location: Optional[ChatLocation] = None):
         """
-        :param id_: Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.
-        :param type: Type of chat, can be either “private”, “group”, “supergroup” or “channel”
+        :param id_: Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type_ are safe for storing this identifier.
+        :param type_: Type of chat, can be either “private”, “group”, “supergroup” or “channel”
         :param title: Title, for supergroups, channels and group chats
         :param username: Username, for private chats, supergroups and channels if available
         :param first_name: First name of the other party in a private chat
@@ -67,11 +67,11 @@ class Chat:
         :param has_protected_content: True, if messages from the chat can't be forwarded to other chats. Returned only in getChat.
         :param sticker_set_name: For supergroups, name of group sticker set. Returned only in getChat.
         :param can_set_sticker_set: True, if the bot can change the group sticker set. Returned only in getChat.
-        :param linked_chat_id: Unique identifier for the linked chat, i.e. the discussion group identifier for a channel and vice versa; for supergroups and channel chats. This identifier may be greater than 32 bits and some programming languages may have difficulty/silent defects in interpreting it. But it is smaller than 52 bits, so a signed 64 bit integer or double-precision float type are safe for storing this identifier. Returned only in getChat.
+        :param linked_chat_id: Unique identifier for the linked chat, i.e. the discussion group identifier for a channel and vice versa; for supergroups and channel chats. This identifier may be greater than 32 bits and some programming languages may have difficulty/silent defects in interpreting it. But it is smaller than 52 bits, so a signed 64 bit integer or double-precision float type_ are safe for storing this identifier. Returned only in getChat.
         :param location: For supergroups, the location to which the supergroup is connected. Returned only in getChat.
         """
         self.id = id_
-        self.type = type
+        self.type = type_
         self.title = title
         self.username = username
         self.first_name = first_name
