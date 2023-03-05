@@ -4,6 +4,8 @@
 
 from typing import Optional
 
+from message import Message
+
 class Chat:
     """
     This object represents a chat.
